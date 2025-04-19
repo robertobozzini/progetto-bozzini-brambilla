@@ -31,11 +31,40 @@ h1, h2{
 }
 
 .img_res{
-    width: 90%; height: 40%
+    width: 90%; height: 60%
+}
+
+.img-res{
+    width: 100%; height: 100%
 }
 
 .container{
-    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container__content{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    background: #000000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    width: 90%;
+    height: 10%;
+}
+
+.WhatsApp{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 65px;
+    height: 65px;
 }
 
 .grid{
@@ -45,7 +74,21 @@ h1, h2{
 
 .col-33{
     width: 33.33%;
-    padding: 10px
+    padding: 0px
+}
+
+@media (max-width: 768px) {
+    .col-33{
+        width: 100%;
+        padding: 0px
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .col-33{
+        width: 50%;
+        padding:0px
+    }
 }
 
 #home{
