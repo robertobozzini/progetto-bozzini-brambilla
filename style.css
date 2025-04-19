@@ -31,11 +31,21 @@ h1, h2{
 }
 
 .img_res{
-    width: 30%; height: 30%
+    width: 90%; height: 40%
 }
 
 .container{
     padding: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.col-33{
+    width: 33.33%;
+    padding: 10px
 }
 
 #home{
