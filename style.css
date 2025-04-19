@@ -1,9 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: #928f8f;
 }
 
 p{
-    color: red;
+    color: rgb(0, 0, 0); font-size: 17px;
+}
+
+header{
+    background-color: yellow; padding: 5px 5px 1px 5px; width: 100%;
+}
+
+a{
+    color: rgb(47, 8, 187); font-size: 20px;
 }
 
 h1, h2{
@@ -14,6 +26,38 @@ h1, h2{
     color: blue
 }
 
+.logo{
+    text-align: center; width: 100%; display: block; font-size: 35px; 
+}
+
+.img_res{
+    width: 30%; height: 30%
+}
+
+.container{
+    padding: 10px;
+}
+
 #home{
-    border: 1px solid rgb(61, 17, 218);
+    text-align: center;
+}
+
+#home li{
+    display: inline;
+}
+
+#home li a{
+    border: 1px  solid rgb(3, 83, 36); margin: 10px
+}
+
+#Kata h3, #Kata img{
+    font-size: 30px; color: rgb(2, 77, 33)
+}
+
+#Kata div{
+    padding: 10px;
+}
+
+footer{
+    background-color: aquamarine; padding: 5px;
 }
