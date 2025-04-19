@@ -1,0 +1,19 @@
+body{
+    background: #928f8f;
+}
+
+p{
+    color: red;
+}
+
+h1, h2{
+    color: green;
+}
+
+.par{
+    color: blue
+}
+
+#home{
+    border: 1px solid rgb(61, 17, 218);
+}
