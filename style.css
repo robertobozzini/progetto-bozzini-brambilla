@@ -62,20 +62,6 @@ h1, h2{
     padding: 0px
 }
 
-@media (max-width: 768px) {
-    .col-33{
-        width: 100%;
-        padding: 0px
-    }
-}
-
-@media (min-width: 768px) and (max-width:1023px){
-    .col-33{
-        width: 50%;
-        padding:0px
-    }
-}
-
 #home{
     text-align: center;
 }
@@ -110,6 +96,45 @@ h1, h2{
     font-size: 200%;
 }
 
+#Kata.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: green;
+    width: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar li a {
+    color: yellow;
+    display: block;
+    padding: 20% 0;
+    font-size: 350%;
+}
+
+.immagine__kata {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.img-res {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 #Kata h3, #Kata img{
     font-size: 30px; color: rgb(2, 77, 33)
 }
@@ -120,4 +145,32 @@ h1, h2{
 
 footer{
     background-color: aquamarine; padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .col-33{
+        width: 100%;
+        padding: 0px
+    }
+    .sidebar li a {
+        color: yellow;
+        display: block;
+        padding: 20px 0;
+        font-size: 150%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .col-33{
+        width: 50%;
+        padding:0px
+    }
+
+    .sidebar li a {
+        color: yellow;
+        display: block;
+        padding: 20px 0;
+        font-size: 200%;
+    }
 }
