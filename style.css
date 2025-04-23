@@ -63,7 +63,6 @@ h1, h2{
     animation: rotation 1.5s infinite linear;
 }
 
-
 .grid{
     display: flex;
     flex-wrap: wrap ;
@@ -245,6 +244,26 @@ h1, h2{
 #Kumite .content ul li a:hover{
     color: rgb(255, 47, 47); 
     font-size: 70;
+}
+
+.main-carousel{
+    margin-top: 50px;
+    border: 5px solid red;
+    position: relative;
+}
+
+.carousel-cell{
+    height: 30vh; border: 3px solid blue;
+    width: 33.33%
+}
+
+@media (max-width: 768px) {
+    .carousel-cell{width: 100%;}
+
+}
+
+@media (min-width: 768px) and (max-width:1023px){
+    .carousel-cell{width:50%}
 }
 
 footer{
