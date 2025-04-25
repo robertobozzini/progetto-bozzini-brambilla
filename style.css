@@ -3,7 +3,7 @@ body{
 }
 
 p{
-    color: rgb(0, 0, 0); font-size: 17px;
+    color: rgb(0, 0, 0); font-size: 17px; text-align: justify;
 }
 
 header{
@@ -70,7 +70,19 @@ h1, h2{
 
 .col-33{
     width: 33%;
-    padding: 0
+    padding: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.col-33.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.col-33 p{
+    text-align: justify;
 }
 
 #home{
@@ -139,11 +151,11 @@ h1, h2{
     margin-bottom: 5.9%;
 }
 
-#Kata.container {
-    display: flex;
-    justify-content: flex-start;
+#Kata .container {
     align-items: center;
     box-sizing: border-box;
+    flex-wrap: nowrap;
+    display: flex;
 }
 
 .sidebar {
@@ -279,6 +291,7 @@ footer{
 @media (max-width: 768px) {
     .col-33{
         width: 100%;
+        height: fit-content;
         padding: 0px
     }
     .sidebar li a {
