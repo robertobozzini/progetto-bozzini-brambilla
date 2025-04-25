@@ -1,193 +1,80 @@
-body{
+/* ===========================
+   RESET & BASE STYLE
+=========================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
     background: #928f8f;
 }
 
-p{
-    color: rgb(0, 0, 0); font-size: 17px; text-align: justify;
-}
-
-header{
-    background-color: yellow; padding: 5px 5px 1px 5px; width: 100%;
-}
-
-a{
-    color: rgb(47, 8, 187); font-size: 20px; width: auto;
-}
-
-a:hover{
-    color: rgb(224, 9, 9);width: auto;
-    transition: background-color 1s ease-in-out;
-}
-
-h1, h2{
-    color: green;
-}
-
-.par{
-    color: blue
-}
-
-.logo{
-    text-align: center; width: 100%; display: block; font-size: 35px; 
-}
-
-.img_res{
-    width: 90%; height: 60%;
-}
-
-.img-res{
-    width: 100%; height: 100%
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.WhatsApp{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 65px;
-    height: 65px;
-}
-
-.WhatsApp :hover{
-    bottom: 0;
-    right: 0;
-    width: 65px;
-    height: 65px;
-    transform: translateY(-10%) scale(110%);
-    transition: all 0.5s ease-out;
-    animation: rotation 1.5s infinite linear;
-}
-
-.grid{
-    display: flex;
-    flex-wrap: wrap ;
-}
-
-.col-33{
-    width: 33%;
-    padding: 0;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.col-33.reveal {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.col-33 p{
+p {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
     text-align: justify;
 }
 
-#home{
+h1, h2 {
+    color: green;
+}
+
+a {
+    color: rgb(47, 8, 187);
+    font-size: 20px;
+    width: auto;
+}
+
+a:hover {
+    color: rgb(224, 9, 9);
+    width: auto;
+    transition: background-color 1s ease-in-out;
+}
+
+
+/* ===========================
+   HEADER & NAV
+=========================== */
+header {
+    background-color: yellow;
+    padding: 5px 5px 1px 5px;
+    width: 100%;
+}
+
+.logo {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+#home {
     text-align: center;
 }
 
-#home li{
+#home li {
     display: inline;
 }
 
-#home li a{
-    border: 1px  solid rgb(3, 83, 36); margin: 10px
+#home li a {
+    border: 1px solid rgb(3, 83, 36);
+    margin: 10px;
 }
 
-#home li a:hover{
-    border: 1px  solid rgb(3, 83, 36); margin: 10px; background-color: rgb(8, 192, 8);
-    transition: background-color  0.5s ease-in-out;
+#home li a:hover {
+    background-color: rgb(8, 192, 8);
+    border: 1px solid rgb(3, 83, 36);
+    margin: 10px;
+    transition: background-color 0.5s ease-in-out;
 }
 
-#home .container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
-#home .container__content{
-    position: absolute;
-    margin: 0;
-    bottom: 0;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+/* ===========================
+   IMMAGINI E LAYOUT
+=========================== */
+.img_res {
     width: 90%;
-    min-height: 10%;
-    font-size: 200%;
-}
-
-#home .container__content:hover{
-    position: absolute;
-    margin: 0;
-    bottom: 0;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
-    width: 90%;
-    min-height: 10%;
-    font-size: 200%;
-    padding-bottom: 2vh; 
-    transition: all 0.5s ease-out;
-}
-
-@media (min-width: 768px){
-    #home .container__content:hover{padding-bottom: 5%;}
-    #home .container__content a h1{ font-size: 70px;}
-}
-
-#Kata .img_res:hover{
-    width: 90%; height: 60%;
-    animation: image 2s infinite linear;
-    margin-bottom: 5.9%;
-}
-
-#Kata .container {
-    align-items: center;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    display: flex;
-}
-
-.sidebar {
-    background-color: green;
-    width: 20%;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.sidebar li a {
-    color: yellow;
-    display: block;
-    padding: 20% 0;
-    font-size: 350%;
-}
-
-.sidebar li a:hover{
-    color: rgb(255, 0, 0);
-}
-
-
-.immagine__kata {
-    width: 80%;
-    height: 50%;
-    box-sizing: border-box;
+    height: 60%;
 }
 
 .img-res {
@@ -196,25 +83,140 @@ h1, h2{
     display: block;
 }
 
-#Kata h3, #Kata img{
-    font-size: 30px; color: rgb(2, 77, 33)
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-#Kata div{
+
+/* ===========================
+   HOMEPAGE - CONTAINER
+=========================== */
+#home .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#home .container__content {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+    color: #ffffff;
+    font-size: 200%;
+    justify-content: center;
+    margin: 0;
+    min-height: 10%;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+}
+
+#home .container__content:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+    color: #ffffff;
+    font-size: 200%;
+    justify-content: center;
+    margin: 0;
+    min-height: 10%;
+    padding-bottom: 2vh;
+    position: absolute;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    #home .container__content:hover {
+        padding-bottom: 5%;
+    }
+    #home .container__content a h1 {
+        font-size: 70px;
+    }
+}
+
+
+/* ===========================
+   SEZIONE KATA
+=========================== */
+#Kata .img_res:hover {
+    animation: image 2s infinite linear;
+    height: 60%;
+    margin-bottom: 5.9%;
+    width: 90%;
+}
+
+#Kata .container {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#Kata h3,
+#Kata img {
+    color: rgb(2, 77, 33);
+    font-size: 30px;
+}
+
+#Kata div {
     padding: 10px;
 }
 
+
+/* ===========================
+   SIDEBAR (KATA)
+=========================== */
+.sidebar {
+    background-color: green;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 20%;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar li a {
+    color: yellow;
+    display: block;
+    font-size: 350%;
+    padding: 20% 0;
+}
+
+.sidebar li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.immagine__kata {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* ===========================
+   SEZIONE KUMITE
+=========================== */
 #Kumite .container {
+    align-items: center;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
     position: relative;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 30px;
 }
-  
+
 .background-video {
     position: absolute;
     top: 0;
@@ -223,111 +225,182 @@ h1, h2{
     height: 100%;
     object-fit: cover;
     z-index: 0;
-}
-  
-#Kumite .content {
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    bottom: 0;
-    background: #000000;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-    min-height: 10%;
-    font-size: 230%;
+    max-width: 100%;
 }
 
-#Kumite .content h1{
+#Kumite .content {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    bottom: 0;
+    font-size: 230%;
+    min-height: 10%;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+#Kumite .content h1 {
     color: white;
 }
 
-#Kumite .content ul{
-    list-style: none;
+#Kumite .content ul {
     display: flex;
     justify-content: space-between;
+    list-style: none;
     margin-right: 5%;
 }
 
-#Kumite .content ul:hover{
+#Kumite .content ul:hover {
     padding-top: 5%;
     transition: padding 0.5s ease-out;
 }
 
-#Kumite .content ul li a{
-    color: greenyellow; 
+#Kumite .content ul li a {
+    color: greenyellow;
     font-size: 30px;
 }
 
-#Kumite .content ul li a:hover{
-    color: rgb(255, 47, 47); 
+#Kumite .content ul li a:hover {
+    color: rgb(255, 47, 47);
     font-size: 70;
 }
 
-.main-carousel{
-    margin-top: 50px;
+
+/* ===========================
+   GRID & COLONNE
+=========================== */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-33 {
+    opacity: 0;
+    padding: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    width: 33%;
+}
+
+.col-33.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.col-33 p {
+    text-align: justify;
+}
+
+
+/* ===========================
+   WHATSAPP ICON
+=========================== */
+.WhatsApp {
+    bottom: 0;
+    height: 65px;
+    position: absolute;
+    right: 0;
+    width: 65px;
+}
+
+.WhatsApp :hover {
+    animation: rotation 1.5s infinite linear;
+    bottom: 0;
+    height: 65px;
+    right: 0;
+    transform: translateY(-10%) scale(110%);
+    transition: all 0.5s ease-out;
+    width: 65px;
+}
+
+
+/* ===========================
+   CAROUSEL
+=========================== */
+.main-carousel {
     border: 5px solid red;
+    margin-top: 50px;
     position: relative;
 }
 
-.carousel-cell{
-    height: 30vh; border: 3px solid blue;
-    width: 33.33%
+.carousel-cell {
+    border: 3px solid blue;
+    height: 30vh;
+    width: 33.33%;
 }
 
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+
+/* ===========================
+   MEDIA QUERIES
+=========================== */
 @media (max-width: 768px) {
-    .carousel-cell{width: 100%;}
-
-}
-
-@media (min-width: 768px) and (max-width:1023px){
-    .carousel-cell{width:50%}
-}
-
-footer{
-    background-color: aquamarine; padding: 5px;
-}
-
-
-@media (max-width: 768px) {
-    .col-33{
+    .carousel-cell {
         width: 100%;
+    }
+
+    .col-33 {
         height: fit-content;
-        padding: 0px
+        padding: 0px;
+        width: 100%;
     }
+
     .sidebar li a {
-        color: yellow;
-        display: block;
-        padding: 20px 0;
         font-size: 150%;
+        padding: 20px 0;
+    }
+
+    #Kumite .container {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        margin-top: 30px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
     }
 }
 
-@media (min-width: 768px) and (max-width:1023px){
-    .col-33{
+@media (min-width: 768px) and (max-width: 1023px) {
+    .carousel-cell {
         width: 50%;
-        padding:0px
+    }
+
+    .col-33 {
+        padding: 0px;
+        width: 50%;
     }
 
     .sidebar li a {
-        color: yellow;
-        display: block;
-        padding: 20px 0;
         font-size: 200%;
+        padding: 20px 0;
     }
+
 }
 
-@keyframes rotation{
-    25% {transform: rotate(10deg) translateY(-10%) scale(110%)}
-    50% {transform: rotate(-20deg) translateY(-10%) scale(110%)}
-    75% {transform: rotate(10deg) translateY(-10%) scale(110%)}
+
+/* ===========================
+   ANIMAZIONI
+=========================== */
+@keyframes rotation {
+    25% { transform: rotate(10deg) translateY(-10%) scale(110%); }
+    50% { transform: rotate(-20deg) translateY(-10%) scale(110%); }
+    75% { transform: rotate(10deg) translateY(-10%) scale(110%); }
 }
 
-@keyframes image{
-    0%  {transform: scale(1.1); opacity: 0.5;}
-    40% {transform: scale(1.1); opacity: 0.5;}
-    50% {transform: scale(1.0); opacity: 1.0;}
-    60% {transform: scale(1.1); opacity: 0.5;}
-    100%{transform: scale(1.1); opacity: 0.5;}
+@keyframes image {
+    0%   { transform: scale(1.1); opacity: 0.5; }
+    40%  { transform: scale(1.1); opacity: 0.5; }
+    50%  { transform: scale(1.0); opacity: 1.0; }
+    60%  { transform: scale(1.1); opacity: 0.5; }
+    100% { transform: scale(1.1); opacity: 0.5; }
 }
-
-*{box-sizing: border-box;}
