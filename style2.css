@@ -1,52 +1,241 @@
+/* Stili di base originali */
+* {
+    box-sizing: border-box;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
 
-*{box-sizing: border-box; font-family: "Rubik", Arial,Helvetica, sans-serif;}
+body {
+    background-color: #ffe7e7;
+}
 
-body{background-color: #ffe7e7; }
+.container {
+    overflow: hidden;
+    z-index: 0;
+    min-width: 365px;
+}
 
-.container{overflow: hidden; z-index: 0; min-width: 365px;}
-
-
-
-.header{
+.header {
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10% 30px 10%;
-    font-size: 18; font-weight: 500; font-size: 15;
+    font-size: 15px;
+    font-weight: 500;
     background-color: #333333;
     text-transform: uppercase;
 }
 
-.logo{margin-right: auto; border-radius: 4px;}
+.logo {
+    margin-right: auto;
+    border-radius: 4px;
+}
 
-.menu ul{margin: 0; }
-.menu li{display: inline-block; }
-.menu a{margin:0; padding: 10px 16px; display: block; text-decoration: none; color: #ffe7e7;}
+.menu ul {
+    margin: 0;
+}
 
+.menu li {
+    display: inline-block;
+}
 
+.menu a {
+    margin: 0;
+    padding: 10px 16px;
+    display: block;
+    text-decoration: none;
+    color: #ffe7e7;
+}
 
+.header a {
+    border-radius: 4px;
+}
 
-/* MENU BUTTON */
-.header a{border-radius: 4px;}
-
-.menu_button{
-    background-color:#cf0000; 
-    color: #ffe7e7; 
+.menu_button {
+    background-color: #cf0000;
+    color: #ffe7e7;
     text-decoration: none;
     display: block;
     padding: 15px 20px;
 }
 
-.menu_button:hover{
+.menu_button:hover {
     background-color: #bf0000;
 }
 
-
-
-.footer{
+.footer {
     background-color: #333333;
     color: #ffe7e7;
 }
-footer p{padding: 15px;}
-footer a{text-decoration: underline; color: #ffe7e7;}
+
+footer p {
+    padding: 15px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #ffe7e7;
+}
+
+/* Nuovi stili aggiunti senza modificare quelli esistenti */
+
+/* Hero homepage */
+.home-hero {
+    text-align: center;
+    padding: 80px 0;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.home-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Sezioni generali */
+section {
+    margin: 60px 10%;
+}
+
+h2 {
+    color: #cf0000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Sedi */
+.sedi-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.sede {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Staff */
+.staff-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.staff-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Galleria */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Eventi */
+.eventi ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.eventi ul li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+/* Contatti */
+.contatti {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contatti p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Form di iscrizione */
+.iscrizione form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.iscrizione label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.iscrizione input,
+.iscrizione select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.iscrizione button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Responsive - Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #ffe7e7;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    nav.menu ul {
+        display: none;
+        flex-direction: column;
+        background: #333333;
+        position: absolute;
+        top: 80px;
+        right: 10%;
+        width: 200px;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
