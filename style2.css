@@ -24,6 +24,9 @@ body {
     font-weight: 500;
     background-color: #333333;
     text-transform: uppercase;
+    position:fixed;
+    margin-top:10;
+    width:99%;
 }
 
 .logo {
@@ -46,7 +49,10 @@ body {
     text-decoration: none;
     color: #ffe7e7;
 }
-
+.menu a:hover{
+    scale: 1.1 1.1 1.1;
+    color: #faf1f1;
+}
 .header a {
     border-radius: 4px;
 }
@@ -61,8 +67,8 @@ body {
 
 .menu_button:hover {
     background-color: #bf0000;
+    scale: 1.05 1.05 1.05;
 }
-
 .footer {
     background-color: #333333;
     color: #ffe7e7;
