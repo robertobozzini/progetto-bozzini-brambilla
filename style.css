@@ -15,8 +15,8 @@ p {
     text-align: justify;
 }
 
-h1, h2 {
-    color: green;
+h1,h2 {
+    color: rgb(88, 16, 3);
 }
 
 a {
@@ -284,9 +284,8 @@ header {
     flex-wrap: nowrap;
 }
 
-#Kata h3,
-#Kata img {
-    color: rgb(2, 77, 33);
+#Kata h3{
+    color: rgb(88, 16, 3);
     font-size: 30px;
 }
 
@@ -464,15 +463,18 @@ header {
    CAROUSEL
 =========================== */
 .main-carousel {
-    border: 5px solid red;
     margin-top: 50px;
     position: relative;
 }
 
 .carousel-cell {
-    border: 3px solid blue;
-    height: 30vh;
+    height: 70vh;
     width: 33.33%;
+    color: black;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -681,3 +683,128 @@ footer {
 
 .tdn{text-decoration: none}
 .fix{position: fixed;}
+
+/* GREEN */
+.green-light {
+  color: #90ee90; /* lightgreen */
+}
+
+.green {
+  color: #008000; /* green */
+}
+
+.green-dark {
+  color: #006400; /* darkgreen */
+}
+
+/* RED */
+.red-light {
+  color: #ff7f7f;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.red-dark {
+  color: #8b0000;
+}
+
+/* BLUE */
+.blue-light {
+  color: #add8e6; /* lightblue */
+}
+
+.blue {
+  color: #0000ff;
+}
+
+.blue-dark {
+  color: #00008b;
+}
+
+/* ORANGE */
+.orange-light {
+  color: #ffd580;
+}
+
+.orange {
+  color: #ff6600;
+}
+
+.orange-dark {
+  color: #cc4100d7;
+}
+
+/* PURPLE */
+.purple-light {
+  color: #dda0dd; /* plum */
+}
+
+.purple {
+  color: #800080;
+}
+
+.purple-dark {
+  color: #4b0082; /* indigo */
+}
+
+/* PINK */
+.pink-light {
+  color: #ffc0cb;
+}
+
+.pink {
+  color: #ff69b4;
+}
+
+.pink-dark {
+  color: #c71585;
+}
+
+/* GRAY */
+.gray-light {
+  color: #d3d3d3;
+}
+
+.gray {
+  color: #808080;
+}
+
+.gray-dark {
+  color: #404040;
+}
+
+/* BROWN */
+.brown-light {
+  color: #d2b48c; /* tan */
+}
+
+.brown {
+  color: #a52a2a;
+}
+
+.brown-dark {
+  color: #5c4033;
+}
+
+/* BLACK & WHITE */
+.black {
+  color: #000000;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.yellow-light {
+  color: #ffffe0; /* light yellow */
+}
+
+.yellow {
+  color: #ffff00; /* standard yellow */
+}
+
+.yellow-dark {
+  color: #bfa700; /* dark yellow / gold shade */
+}
