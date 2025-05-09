@@ -154,6 +154,7 @@ header {
 .img_res {
     width: 90%;
     height: 60%;
+    display: block;
 }
 
 .img-res {
@@ -477,6 +478,18 @@ header {
     flex-wrap: wrap;
 }
 
+.carousel-cell a {
+    height: fit-content;
+}
+
+.carousel-cell a img{
+    height: fit-content block size;
+}
+
+.carousel-cell a img:hover{
+    animation: image 2s infinite linear;
+}
+
 
 /* ===========================
    FOOTER
@@ -683,6 +696,11 @@ footer {
 
 .tdn{text-decoration: none}
 .fix{position: fixed;}
+
+
+/* ========================
+   COLORS
+=========================== */
 
 /* GREEN */
 .green-light {
