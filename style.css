@@ -826,3 +826,60 @@ footer {
 .yellow-dark {
   color: #bfa700; /* dark yellow / gold shade */
 }
+
+/* ===========================
+   LIVELLI
+=========================== */
+
+#Livelli .container{
+    padding: 20px 10px;
+    height: 30vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+    margin: 10% 5%;
+}
+
+#Livelli .img-cintura.sx{
+    width: 30%; 
+    height: fit-content;
+    margin-right: 5%;
+}
+
+#Livelli .img-cintura.dx{
+    width: 30%; 
+    height: fit-content;  
+    margin-left: 5%;
+}
+
+#Livelli p{
+    width: 60%;
+    margin: 0;
+}
+    
+
+#Livelli .img-cintura:hover{
+    animation: image 2s infinite linear;
+}
+
+@media (max-width:768px){
+    #Livelli .container{
+        margin-bottom: 20%;
+    }
+
+    #Livelli .img-cintura.dx{
+        float: right;
+    }
+    #Livelli .img-cintura.sx{
+        float: left;
+    }
+
+    #Livelli p{
+        width: 100%;
+        font-size: 5;
+    }
+}
+
+
+
+
