@@ -25,6 +25,11 @@ a {
     width: auto;
 }
 
+a .tdn{
+    text-decoration: none;
+    text-underline-position: none;
+}
+
 a:hover {
     color: rgb(224, 9, 9);
     width: auto;
@@ -35,15 +40,10 @@ a:hover {
 =========================== */
 
 #Kata .layout-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* 1 parte per la colonna sinistra, 3 per la colonna destra */
-    grid-template-rows: auto 1fr auto auto; /* Header, contenuto principale, footer */
-    grid-template-areas: 
-        "header header"
-        "menu main"
-        "kata kata"
-        "footer footer";
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    float: right;
 }
 #Kata header{
     grid-area:header;
@@ -56,6 +56,7 @@ a:hover {
     margin: 0px;
     background-color: #f4f4f4;
     padding: 20px;
+    width: fit-content;
 }
 /* ===========================
    BUTTONS
@@ -81,13 +82,18 @@ a:hover {
     border:1px;
     display:block;
     width:100%;
-    font-size: 30px;
+    font-size: 2%s;
     padding:10px 30px;
     border-radius:4px;
     background-color:rgba(128, 128, 128, 0.398);
     color: black;
     
 }
+
+#Kata .button a{
+    color:black
+}
+
 .buttons{
     
     border:1px;
@@ -99,9 +105,7 @@ a:hover {
     color: black;
     
 }
-.button:hover{
-    background-color:gray;
-}
+
 .buttons:hover{
     background-color:gray;
 }
@@ -241,6 +245,7 @@ header {
     text-align: center;
     z-index: 2;
     transition: transform 0.5s ease, color 0.5s ease;
+    
 }
 
 .hero-box:hover .overlay {
@@ -318,12 +323,22 @@ header {
     color: rgb(255, 0, 0);
 }
 
+#SidebarKata{
+    position: fixed;
+    bottom: 2%;
+    left: 3%;
+    width: 20%;
+    height: 70%;
+    align-items: center;
+}
+
 .immagine__kata {
     width: 80%;
     height: auto;
     max-width: 100%;
     box-sizing: border-box;
     display: block;
+    margin-right: 20%;
 }
 
 /* ===========================
@@ -641,3 +656,6 @@ footer {
 .py3 { padding-top: var(--space-3); padding-bottom: var(--space-3); }
 .py4 { padding-top: var(--space-4); padding-bottom: var(--space-4); }
 .py5 { padding-top: var(--space-5); padding-bottom: var(--space-5); }
+
+.tdn{text-decoration: none}
+.fix{position: fixed;}
