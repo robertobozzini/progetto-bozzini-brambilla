@@ -158,6 +158,14 @@ header {
     display: block;
 }
 
+.img_res2{
+  width: 90%;
+  height: 60%;
+  display: block;
+  max-width: 40%;
+  transform: translateX(75%);
+}
+
 .img-res {
     width: 100%;
     height: auto;
