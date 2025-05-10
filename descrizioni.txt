@@ -1,0 +1,151 @@
+<section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Gialla</h2>
+            <p>
+                Con il passaggio alla cintura gialla, il praticante comincia a padroneggiare tecniche più complesse 
+                e a sviluppare un maggior controllo dei movimenti. Le tecniche fondamentali includono:
+            </p>
+            <ul>
+                <li><strong>Jodan Zuki</strong> - Pugno alto, che aiuta a perfezionare la velocità e la precisione del colpo.</li>
+                <li><strong>Mae Geri</strong> - Calcio frontale che richiede un buon coordinamento tra la parte inferiore e superiore del corpo.</li>
+                <li><strong>Uchi Uke</strong> - Parata interna che migliora la capacità di difesa contro attacchi diretti.</li>
+            </ul>
+            <p>
+                La cintura gialla rappresenta il primo livello di maturazione nelle tecniche di Karate.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura giallarancio -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Giallarancio</h2>
+            <p>
+                La cintura giallarancio segna l'introduzione di nuove parate e colpi. Il praticante comincia a 
+                sviluppare una tecnica più fluida ed efficiente.
+            </p>
+            <ul>
+                <li><strong>Chudan Uke</strong> - Parata media che viene utilizzata contro attacchi diretti alla parte centrale del corpo.</li>
+                <li><strong>Hiza Geri</strong> - Calcio al ginocchio, che implica un miglioramento nell'agilità e nella forza.</li>
+                <li><strong>Morote Zuki</strong> - Un pugno rinforzato con entrambe le mani per aumentare la potenza.</li>
+            </ul>
+            <p>
+                Questo livello richiede concentrazione e una maggiore conoscenza dei movimenti di base.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura arancione -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Arancione</h2>
+            <p>
+                Alla cintura arancione, il praticante ha acquisito una solida comprensione delle tecniche di base 
+                ed è pronto ad affrontare movimenti più complessi e veloci.
+            </p>
+            <ul>
+                <li><strong>Yoko Geri</strong> - Calcio laterale che migliora la capacità di difesa e di attacco a lunga distanza.</li>
+                <li><strong>Seiken Zuki</strong> - Pugno diretto che insegna l'uso corretto della forza nel combattimento.</li>
+                <li><strong>Soto Uke</strong> - Parata esterna che aiuta a gestire attacchi provenienti da angolazioni diverse.</li>
+            </ul>
+            <p>
+                La cintura arancione richiede pratica e precisione, ma i miglioramenti sono visibili e apprezzabili.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura arancioverde -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Arancioverde</h2>
+            <p>
+                La cintura arancioverde segna un altro passo verso la maturità nelle tecniche. Il praticante inizia 
+                ad applicare le tecniche con maggiore velocità e potenza.
+            </p>
+            <ul>
+                <li><strong>Maai</strong> - L'arte della distanza, fondamentale per il combattimento, per comprendere quando attaccare o difendersi.</li>
+                <li><strong>Gyaku Zuki</strong> - Pugno inverso che aiuta a migliorare la potenza dell'attacco, utilizzando il corpo in modo più naturale.</li>
+                <li><strong>Uchi Geri</strong> - Calcio interno che aiuta a perfezionare la tecnica delle gambe.</li>
+            </ul>
+            <p>
+                È un livello che combina tecnica, velocità e forza, consolidando le fondamenta per i futuri passaggi.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura verde -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Verde</h2>
+            <p>
+                Alla cintura verde, il praticante inizia a perfezionare le sue tecniche, sviluppando un ottimo controllo 
+                del corpo e della mente.
+            </p>
+            <ul>
+                <li><strong>Jodan Uke</strong> - Parata alta per difendersi da attacchi al viso, migliorando la precisione nelle parate.</li>
+                <li><strong>Haito Uchi</strong> - Colpo con il bordo della mano che serve per imparare a colpire con angoli specifici.</li>
+                <li><strong>Fumikomi Geri</strong> - Calcio di impatto, che simula un attacco rapido e potente.</li>
+            </ul>
+            <p>
+                La cintura verde rappresenta un momento di grande crescita, in cui la tecnica diventa più raffinata.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura verdeblu -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Verdeblu</h2>
+            <p>
+                La cintura verdeblu segna un'evoluzione nelle capacità tecniche. Il praticante è pronto ad affrontare
+                sfide più complesse sia nel combattimento che nelle tecniche.
+            </p>
+            <ul>
+                <li><strong>Mae Geri Keage</strong> - Calcio frontale con la punta del piede, utile per colpire rapidamente l'avversario.</li>
+                <li><strong>Shuto Uke</strong> - Parata con il bordo della mano, utile per difendersi contro attacchi dall'alto.</li>
+                <li><strong>Te Uke</strong> - Parata a mano alta che aiuta a prepararsi per successivi attacchi o contromosse.</li>
+            </ul>
+            <p>
+                La cintura verdeblu è un livello che prepara il praticante a tecniche avanzate, migliorando velocità e reattività.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura blu -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Blu</h2>
+            <p>
+                Alla cintura blu, il praticante è ormai esperto nell'uso delle tecniche di base e inizia ad affrontare 
+                movimenti più complessi e sfide di combattimento.
+            </p>
+            <ul>
+                <li><strong>Ryote Zuki</strong> - Pugno doppio che aiuta a migliorare la potenza dei colpi e la velocità dell'attacco.</li>
+                <li><strong>Ura Geri</strong> - Calcio all'indietro che richiede buona coordinazione e precisione.</li>
+                <li><strong>Yoko Uke</strong> - Parata laterale che è utile per difendersi in combattimento da attacchi laterali.</li>
+            </ul>
+            <p>
+                La cintura blu segna un momento di grande avanzamento nelle capacità tecniche.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura marrone -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Marrone</h2>
+            <p>
+                La cintura marrone rappresenta un livello avanzato di Karate, dove il praticante deve essere in grado
+                di applicare in modo fluido e preciso tutte le tecniche apprese finora.
+            </p>
+            <ul>
+                <li><strong>Jodan Mae Geri</strong> - Calcio alto che simula un attacco potente e mirato alla testa.</li>
+                <li><strong>Fusoku</strong> - Tecnica di equilibrio che richiede concentrazione e resistenza mentale.</li>
+                <li><strong>Gyaku Zuki Mawashi</strong> - Pugno inverso che unisce la rotazione del corpo per aumentare la potenza.</li>
+            </ul>
+            <p>
+                La cintura marrone segna la transizione verso il raggiungimento della maestria nelle tecniche di Karate.
+            </p>
+        </section>
+
+        <!-- Descrizione della cintura nera -->
+        <section class="descrizione-karate">
+            <h2>Le Tecniche per la Cintura Nera</h2>
+            <p>
+                La cintura nera è il traguardo di un lungo percorso, simbolo di grande abilità e comprensione delle 
+                tecniche di Karate. Chi arriva a questo livello è capace di combinare tecnica, velocità e potenza con maestria.
+            </p>
+            <ul>
+                <li><strong>Keri Waza</strong> - Tecniche avanzate di calcio che richiedono una grande abilità nella gestione della forza.</li>
+                <li><strong>Hidari Zuki</strong> - Pugno sinistro avanzato che rappresenta la simmetria e il bilanciamento nel Karate.</li>
+                <li><strong>Waki Geri</strong> - Calcio laterale che deve essere eseguito con precisione e rapidità per ottenere il massimo impatto.</li>
+            </ul>
+            <p>
+                La cintura nera è il simbolo del continuo apprendimento e della dedizione al Karate.
+            </p>
+        </section>
