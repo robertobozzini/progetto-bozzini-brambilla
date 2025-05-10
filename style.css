@@ -3,12 +3,14 @@
 =========================== */
 * {
     box-sizing: border-box;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #928f8f;
+  background: #ede8e8;
+  flex-direction: column;
+  flex:1;
 }
-
 p {
     color: rgb(0, 0, 0);
     font-size: 17px;
@@ -16,7 +18,7 @@ p {
 }
 
 h1,h2 {
-    color: rgb(88, 16, 3);
+    color: rgb(189, 189, 189);
 }
 
 a {
@@ -101,14 +103,16 @@ a:hover {
     display:inline-block;
     width:100%;
     padding:10px;
-    border-radius:4px;
-    background-color:rgba(128, 128, 128, 0.398);
-    color: black;
+    border-radius:3px;
+    background-color:rgba(103, 103, 103, 0.398);
+    color: rgb(215, 215, 215);
     
 }
 
 .buttons:hover{
     background-color:gray;
+    scale: 1.05 1.05 1.05;
+
 }
 /* ===========================
    HEADER & NAV
@@ -116,8 +120,8 @@ a:hover {
 
 header {
     /*grid-area: header;*/
-    background-color: rgb(198, 198, 198);
-    padding: 2% 5% 2% 5%;
+    background-color: rgb(62, 62, 62);
+    padding: 1px 10px 20px 10px;
     width: 100%;
 }
 
@@ -402,12 +406,13 @@ header {
 }
 
 #Kumite .content ul li a {
-    color: greenyellow;
+    color: rgb(208, 254, 156);
     font-size: 30px;
+    text-decoration: underline;
 }
 
 #Kumite .content ul li a:hover {
-    color: rgb(255, 47, 47);
+    color:  rgb(168, 244, 62);
     font-size: 70;
 }
 
@@ -508,10 +513,21 @@ header {
    FOOTER
 =========================== */
 footer {
-    background-color: aquamarine;
+    
     padding: 5px;
+    background-color: #333333;
+    color: #ffe7e7;
+    
+}
+footer p {
+  text-align:center;
+  color:white;
 }
 
+footer a {
+  text-decoration: underline;
+  color: #ffe7e7;
+}
 
 /* ===========================
    MEDIA QUERIES
