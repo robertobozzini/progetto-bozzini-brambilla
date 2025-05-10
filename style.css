@@ -827,57 +827,64 @@ footer {
   color: #bfa700; /* dark yellow / gold shade */
 }
 
+.cnt{
+    text-align: center;
+}
+
+.big{text-emphasis: bold; font-size: 50px;}
+.b-gold{background-color: gold; border-radius: 20px;}
+.ho{text-overflow: hide;}
+
 /* ===========================
    LIVELLI
 =========================== */
 
-#Livelli .container{
-    padding: 20px 10px;
-    height: 30vh;
-    position: relative;
+#Livelli .container {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 2rem;
+	gap: 1.5rem;
+}
+
+#Livelli .container.sx {
+	flex-direction: row;
+}
+
+#Livelli .container.dx {
+	flex-direction: row-reverse;
+}
+
+#Livelli .immagine img {
+	max-width: 150px;
+	height: auto;
+	display: block;
+}
+
+#Livelli .immagine img:hover{
+    animation: image infinite 2s linear;
+}
+
+@media (max-width: 768px) {
+  #Livelli .container {
+    flex-direction: column !important;
     align-items: center;
-    display: flex;
-    margin: 10% 5%;
-}
+    text-align: center;
+  }
 
-#Livelli .img-cintura.sx{
-    width: 30%; 
-    height: fit-content;
-    margin-right: 5%;
-}
+  #Livelli .immagine {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 
-#Livelli .img-cintura.dx{
-    width: 30%; 
-    height: fit-content;  
-    margin-left: 5%;
-}
+  #Livelli .immagine img {
+    max-width: 400px;
+    height: auto;
+    max-height: 500px;
+  }
 
-#Livelli p{
-    width: 60%;
-    margin: 0;
-}
-    
-
-#Livelli .img-cintura:hover{
-    animation: image 2s infinite linear;
-}
-
-@media (max-width:768px){
-    #Livelli .container{
-        margin-bottom: 20%;
-    }
-
-    #Livelli .img-cintura.dx{
-        float: right;
-    }
-    #Livelli .img-cintura.sx{
-        float: left;
-    }
-
-    #Livelli p{
-        width: 100%;
-        font-size: 5;
-    }
+  #Livelli p {
+    padding: 0 1rem;
+  }
 }
 
 
