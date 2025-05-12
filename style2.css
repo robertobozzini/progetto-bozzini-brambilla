@@ -1,4 +1,12 @@
-/* Stili di base originali */
+/*
+cose da fare:
+mettere aposto logo e dettagli
+rimpiazzare i lorem ipsium
+mettere aposto i footer e whatsapp
+cambiare nome classe: button --> pulsanti__button; buttons--> pulsantis__button
+
+rendere possibile guardare da telefono: media query ecc (flex-wrap: wrap nelle scritte nelle immagini)
+*/
 * {
     box-sizing: border-box;
     font-family: "Rubik", Arial, Helvetica, sans-serif;
@@ -83,11 +91,39 @@ footer p {
     padding: 15px;
     text-align:center;
 }
-
+/*
 footer a {
     text-decoration: underline;
     color: #ffe7e7;
 }
+*/
+
+.WhatsApp {
+    bottom: 0;
+    height: 65px;
+    position: absolute;
+    right: 0;
+    width: 65px;
+    margin-right: 20px;
+}
+
+.WhatsApp :hover {
+    animation: rotation 1.5s infinite linear;
+    bottom: 0;
+    height: 65px;
+    right: 0;
+    transform: translateY(-10%) scale(110%);
+    transition: all 0.5s ease-out;
+    width: 65px;
+}
+
+
+.img-res {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* Nuovi stili aggiunti senza modificare quelli esistenti */
 
@@ -250,4 +286,10 @@ h2 {
     .hamburger {
         display: flex;
     }
+}
+
+@keyframes rotation {
+    25% { transform: rotate(10deg) translateY(-10%) scale(110%); }
+    50% { transform: rotate(-20deg) translateY(-10%) scale(110%); }
+    75% { transform: rotate(10deg) translateY(-10%) scale(110%); }
 }
