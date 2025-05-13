@@ -61,7 +61,7 @@ a:hover {
     width: -content;
 }
 /* ===========================
-   BUTTONS
+   pulsantis__button
 =========================== */
 .pulsantis{
     margin:auto;
@@ -81,7 +81,7 @@ a:hover {
     align-items: center;       /* centra gli elementi orizzontalmente (facoltativo) */
     gap: 30px;    
 }
-#Kata .button{
+#Kata .pulsanti__button{
     border:1px;
     display:block;
     width:100%;
@@ -93,11 +93,11 @@ a:hover {
     
 }
 
-#Kata .button a{
+#Kata .pulsanti__button a{
     color:black
 }
 
-.buttons{
+.pulsantis__button{
     
     border:1px;
     display:inline-block;
@@ -109,7 +109,7 @@ a:hover {
     
 }
 
-.buttons:hover{
+.pulsantis__button:hover{
     background-color:gray;
     scale: 1.05 1.05 1.05;
 
@@ -484,10 +484,11 @@ header {
 .main-carousel {
     margin-top: 50px;
     position: relative;
+    align-items: baseline
 }
 
 .carousel-cell {
-    height: 70vh;
+    height: 30vh;
     width: 33.33%;
     color: black;
     justify-content: center;
@@ -496,12 +497,22 @@ header {
     flex-wrap: wrap;
 }
 
+.h-70{
+  height: 70vh;
+}
+
 .carousel-cell a {
     height: fit-content;
 }
+.carousel-cell h3 {
+    height: fit-content;
+}
 
-.carousel-cell a img{
-    height: fit-content block size;
+.carousel-cell a .img_res{
+    height: fit-content;
+    object-fit: cover;
+    max-height: 500px;
+    justify-self: center;
 }
 
 .carousel-cell a img:hover{
@@ -563,7 +574,7 @@ footer a {
         flex-direction: row; /* per affiancare i pulsanti su mobile */
         flex-wrap: nowrap;
     }
-    .button{
+    .pulsanti__button{
         font-size: 15px;
     }
 
@@ -589,6 +600,7 @@ footer a {
     .col-33 {
         padding: 0px;
         width: 50%;
+        height: fit-content;
     }
 
     .sidebar li a {

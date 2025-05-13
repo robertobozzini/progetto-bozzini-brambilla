@@ -3,7 +3,7 @@ cose da fare:
 mettere aposto logo e dettagli
 rimpiazzare i lorem ipsium
 mettere aposto i footer e whatsapp
-cambiare nome classe: button --> pulsanti__button; buttons--> pulsantis__button
+cambiare nome classe: pulsanti__button --> pulsanti__button; pulsantis__button--> pulsantis__button
 
 rendere possibile guardare da telefono: media query ecc (flex-wrap: wrap nelle scritte nelle immagini)
 */
@@ -253,7 +253,7 @@ h2 {
     border-radius: 4px;
 }
 
-.iscrizione button {
+.iscrizione pulsanti__button {
     width: 100%;
     padding: 15px;
     font-size: 1rem;
