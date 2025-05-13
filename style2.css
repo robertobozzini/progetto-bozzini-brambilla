@@ -84,6 +84,7 @@ body {
     scale: 1.05 1.05 1.05;
 }
 .footer {
+
     background-color: #333333;
     color: #ffe7e7;
 }
@@ -91,6 +92,7 @@ body {
 footer p {
     padding: 15px;
     text-align:center;
+    color:white;
 }
 /*
 footer a {
@@ -108,7 +110,7 @@ footer a {
     margin-right: 20px;
 }
 
-.WhatsApp :hover {
+.WhatsApp:hover {
     animation: rotation 1.5s infinite linear;
     bottom: 0;
     height: 65px;
