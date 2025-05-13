@@ -421,8 +421,8 @@ header {
    GRID & COLONNE
 =========================== */
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .col-33 {
@@ -430,7 +430,7 @@ header {
     padding: 0;
     transform: translateY(30px);
     transition: opacity 1s ease-out, transform 1s ease-out;
-    width: 33%;
+    width: 100%;
 }
 
 .col-20{
@@ -548,12 +548,6 @@ footer a {
         width: 100%;
     }
 
-    .col-33 {
-        height: fit-content;
-        padding: 0px;
-        width: 100%;
-    }
-
     .sidebar li a {
         font-size: 150%;
         padding: 20px 0;
@@ -596,16 +590,13 @@ footer a {
     .carousel-cell {
         width: 50%;
     }
-
-    .col-33 {
-        padding: 0px;
-        width: 50%;
-        height: fit-content;
-    }
-
     .sidebar li a {
         font-size: 200%;
         padding: 20px 0;
+    }
+
+    .grid{
+      grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -614,6 +605,11 @@ footer a {
     .col-33 {
         width: 100%;
     }
+
+    .grid{
+      grid-template-columns: 1fr;
+    }
+    
 }
 
 
