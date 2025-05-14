@@ -488,7 +488,7 @@ header {
     align-items: baseline
 }
 
-.carousel-cell {
+.carousel__cell {
     height: 30vh;
     width: 33.33%;
     color: black;
@@ -507,21 +507,21 @@ header {
   min-height: 500px;
 }
 
-.carousel-cell a {
+.carousel__cell a {
     height: fit-content;
 }
-.carousel-cell h3 {
+.carousel__cell h3 {
     height: fit-content;
 }
 
-.carousel-cell a .img_res{
+.carousel__cell a .img_res{
     height: fit-content;
     object-fit: cover;
     max-height: 500px;
     justify-self: center;
 }
 
-.carousel-cell a img:hover{
+.carousel__cell a img:hover{
     animation: image 2s infinite linear;
 }
 
@@ -547,7 +547,7 @@ footer p {
    MEDIA QUERIES
 =========================== */
 @media (max-width: 768px) {
-    .carousel-cell {
+    .carousel__cell {
         width: 100%;
     }
 
@@ -584,13 +584,21 @@ footer p {
         gap: 30px;    
         justify-content: center;
         flex-wrap: wrap;
+    }
 
 }
 
+@media (max-width: 500px) {
+  #Kumite .content ul li a {
+    color: rgb(208, 254, 156);
+    font-size: 18px;
+    text-decoration: underline;
+}
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .carousel-cell {
+    .carousel__cell {
         width: 50%;
     }
     .sidebar li a {
@@ -627,7 +635,7 @@ footer p {
     padding-bottom: 500px;
   }
 
-  .carousel-cell {
+  .carousel__cell {
       min-height: 350px;
     }
   
