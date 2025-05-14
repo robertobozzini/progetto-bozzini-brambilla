@@ -378,7 +378,7 @@ header {
     max-width: 100%;
 }
 
-#Kumite .content {
+#Kumite .container__content {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     font-size: 230%;
@@ -389,29 +389,29 @@ header {
     z-index: 1;
 }
 
-#Kumite .content h1 {
+#Kumite .container__content h1 {
     color: white;
 }
 
-#Kumite .content ul {
+#Kumite .container__content ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-right: 5%;
 }
 
-#Kumite .content ul:hover {
+#Kumite .container__content ul:hover {
     padding-top: 5%;
     transition: padding 0.5s ease-out;
 }
 
-#Kumite .content ul li a {
+#Kumite .container__content ul li a {
     color: rgb(208, 254, 156);
     font-size: 30px;
     text-decoration: underline;
 }
 
-#Kumite .content ul li a:hover {
+#Kumite .container__content ul li a:hover {
     color:  rgb(168, 244, 62);
     font-size: 70;
 }
@@ -589,7 +589,7 @@ footer p {
 }
 
 @media (max-width: 500px) {
-  #Kumite .content ul li a {
+  #Kumite .container__content ul li a {
     color: rgb(208, 254, 156);
     font-size: 18px;
     text-decoration: underline;
