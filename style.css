@@ -502,6 +502,11 @@ header {
   height: 70vh;
 }
 
+.h-45{
+  height: 45vh;
+  min-height: 500px;
+}
+
 .carousel-cell a {
     height: fit-content;
 }
@@ -617,6 +622,14 @@ footer p {
   .main-carousel{
     padding-bottom: 100px;
   }
+
+  body{
+    padding-bottom: 500px;
+  }
+
+  .carousel-cell {
+      min-height: 350px;
+    }
   
 }
 
