@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -31,11 +30,13 @@
                 <span></span><span></span><span></span>
             </div>
         </header>
+
         <br><br><br><br><br><br><br><br><br><br>
+
         <!-- Sezione iscrizione -->
         <section class="iscrizione">
             <h2>Iscriviti al Dojo</h2>
-            <form action="#" method="post">
+            <form id="formIscrizione" action="#" method="post">
                 <label for="nome">Nome e Cognome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -53,15 +54,30 @@
                     <option>Intermedio</option>
                     <option>Avanzato</option>
                 </select>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu_button" type="submit">Invia</a>
+
+                <button type="submit" class="menu_button" style="margin-top: 10px; justify-self: center; width: 70%;">INVIA</button>
             </form>
         </section>
-
     </div>
+
     <!-- Footer comune -->
     <footer class="footer">
         <p>© Bozzini Roberto & Brambilla Alessandro - P.Iva 00000000000000 Tel. 333333333333333</p>
         <a href="https://www.whatsapp.com/?lang=it_IT" class="WhatsApp"><img src="../images/WhatsApp.webp" alt="whatsapp icona" class="img-res"></a>
     </footer>
+
+    <!-- Script per svuotare i campi dopo invio -->
+    <script>
+        document.getElementById('formIscrizione').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita il ricaricamento della pagina
+
+            // Simula invio (qui puoi aggiungere chiamate API, ecc.)
+            alert("Modulo inviato con successo!");
+
+            // Svuota i campi del form
+            this.reset();
+        });
+    </script>
 </body>
 </html>
+
