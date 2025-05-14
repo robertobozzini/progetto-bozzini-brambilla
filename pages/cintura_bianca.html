@@ -38,17 +38,17 @@
 
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Shodan</h3>
             <img src="../images/Taikyoku_Shodan.jpg" alt="kata" class="img_res">
             <p>Il Taikyoku Shodan è il primo kata tradizionale insegnato ai principianti. Si compone principalmente di tecniche base come l'Oi Zuki (pugno avanzato) e il Gedan Barai (parata bassa). La struttura semplice del kata, con movimenti eseguiti su linee dritte e angoli a 90°, aiuta lo studente a comprendere direzione, equilibrio e controllo del corpo.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Nidan</h3>
             <img src="../images/Taikyoku_Nidan.jpg" alt="kata" class="img_res">
             <p>Taikyoku Nidan rappresenta un'evoluzione del primo kata, con l'inserimento di tecniche leggermente più complesse, mantenendo comunque la stessa struttura. L’obiettivo è rafforzare la coordinazione tra respirazione e movimento, affinando al tempo stesso postura e ritmo d’esecuzione nelle tecniche di attacco e difesa.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Sandan</h3>
             <img src="../images/Taikyoku_Sandan.jpg" alt="kata" class="img_res">
             <p>Il Taikyoku Sandan introduce variazioni nei colpi rispetto ai kata precedenti. I praticanti devono eseguire le tecniche con maggiore intensità, migliorando fluidità e precisione. Questo kata consolida le basi del kihon (tecniche fondamentali), preparando il karateka ad affrontare kata più complessi con sicurezza.</p>
@@ -57,15 +57,15 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">Il Kihon Ippon Kumite è una forma di combattimento prestabilito dove uno studente attacca e l'altro si difende e contrattacca. Questo esercizio serve a sviluppare riflessi, tempismo e distanza corretta. Ogni attacco è preceduto da un kihon (tecnica base), rendendo l’allenamento fondamentale per la transizione al kumite libero.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">Nel Sanbon Kumite, le tecniche si eseguono in sequenze da tre attacchi, alternando difesa e risposta. Questo esercizio rinforza la continuità e il ritmo, oltre a stimolare il controllo dell’energia e della distanza. È ideale per migliorare la fluidità nei movimenti e la consapevolezza del corpo durante lo scontro.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Gohon</h3>   
             <p class="p2">Il Gohon Kumite prevede cinque attacchi consecutivi da parte di un praticante, seguiti da cinque difese e contrattacchi da parte dell’altro. Questo metodo allena la resistenza mentale e fisica, rinforza la stabilità delle posizioni e affina l’uso delle tecniche di base, fondamentali nelle fasi iniziali dell’apprendimento.</p>
         </div>
@@ -113,7 +113,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

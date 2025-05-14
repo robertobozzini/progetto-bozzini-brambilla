@@ -35,19 +35,19 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Sandan</h3>
             <img src="../images/Heian_Sandan.webp" alt="kata" class="img_res">
             <p>Il kata Heian Sandan è un passo fondamentale nel percorso del praticante. Questo kata introduce movimenti complessi che richiedono un alto livello di coordinazione e precisione. Durante l'esecuzione, vengono utilizzate parate e attacchi a corta distanza, con l'obiettivo di migliorare la stabilità e la capacità di reazione. La sua esecuzione corretta prepara il karateka a rispondere rapidamente agli attacchi in un contesto di difesa.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Yondan</h3>
             <img src="../images/HeianYondan.jpg" alt="kata" class="img_res">
             <p>Il Heian Yondan è un kata che presenta una maggiore complessità rispetto ai precedenti. Si distingue per la varietà dei suoi movimenti, che includono parate, attacchi e posizioni di transizione. Ogni movimento richiede non solo precisione ma anche una notevole fluidità per mantenere l'equilibrio. Questo kata è essenziale per migliorare la capacità di eseguire movimenti rapidi e precisi, necessari per una difesa efficace contro attacchi diretti.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Godan</h3>
             <img src="../images/heian godan.gif" alt="kata" class="img_res">
             <p>Heian Godan è uno dei kata più avanzati del primo ciclo. Presenta sequenze di tecniche che vanno dall'attacco alla difesa, e include una combinazione di colpi al volto e alle gambe. Ogni fase del kata mette alla prova la resistenza e la reattività del karateka. Questo kata aiuta a perfezionare la capacità di eseguire movimenti complessi con velocità e potenza, sviluppando al contempo una maggiore consapevolezza dello spazio e del ritmo.</p>
@@ -57,15 +57,15 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p>Il Kihon Ippon è una forma di kumite che si concentra su un singolo attacco e difesa. Il praticante affronta l'avversario con l'intento di eseguire una tecnica perfetta, mantenendo il controllo e la disciplina. L'obiettivo di questo esercizio è migliorare la precisione nei colpi e la capacità di rispondere prontamente agli attacchi, senza cadere nell'impulsività. Si basa sul concetto di eseguire una tecnica completa in ogni movimento, mantenendo la calma.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p>Il Sanbon Kumite è un esercizio di kumite che coinvolge tre attacchi consecutivi da parte dell'avversario, cui il praticante deve rispondere con altrettante difese e contromosse. Questo tipo di kumite aiuta a sviluppare la reattività, il tempismo e la tecnica difensiva. Ogni attacco deve essere parato con precisione, seguito da una risposta altrettanto precisa. L'esercizio stimola la capacità di rimanere concentrati e preparati per affrontare più attacchi in rapida successione.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Jiyu Ippon</h3>   
             <p>Il Jiyu Ippon Kumite è una forma di kumite che simula un combattimento libero, ma con regole precise. Il praticante deve essere in grado di adattarsi alle situazioni impreviste, rispondendo in modo naturale e strategico agli attacchi. Questo esercizio è particolarmente utile per sviluppare una comprensione più profonda delle tecniche e del loro impiego in un contesto dinamico. Il Jiyu Ippon favorisce lo sviluppo del coraggio, della fiducia e della fluidità nelle tecniche applicate.</p>
         </div>
@@ -103,7 +103,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

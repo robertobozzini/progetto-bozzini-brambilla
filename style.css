@@ -425,7 +425,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.col-33 {
+.grid__col {
     opacity: 0;
     padding: 0;
     transform: translateY(30px);
@@ -441,16 +441,16 @@ header {
     width: 80%;
 }
 
-.col-33.reveal {
+.grid__col.reveal {
     opacity: 1;
     transform: translateY(0);
 }
 
-.col-33 p {
+.grid__col p {
     text-align: justify;
 }
 
-.col-33 img{
+.grid__col img{
     transform: translateX(5%);
 }
 
@@ -613,7 +613,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    .col-33 {
+    .grid__col {
         width: 100%;
     }
 

@@ -38,7 +38,7 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Tekki Shodan</h3>
             <img src="../images/download.jpg" alt="kata" class="img_res">
             <p>
@@ -46,7 +46,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Bassai Dai</h3>
             <img src="../images/Bassai Dai.jpg" alt="kata" class="img_res">
             <p>
@@ -54,7 +54,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kanku Dai</h3>
             <img src="../images/kanku dai.gif" alt="kata" class="img_res">
             <p>
@@ -66,19 +66,19 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">
                 Kihon Ippon Kumite è una forma di combattimento che si concentra sull'apprendimento e sull'esecuzione di attacchi e difese in modo strutturato. Durante questo esercizio, il praticante esegue un attacco preciso verso un avversario che si prepara a difendersi in modo specifico. L'obiettivo principale di Kihon Ippon è sviluppare la comprensione delle distanze di combattimento, delle tecniche di difesa e delle tempistiche, migliorando la reattività e la capacità di eseguire tecniche con forza e velocità.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Jiyu Ippon</h3>   
             <p class="p2">
                 Jiyu Ippon Kumite è una forma di combattimento più libera rispetto al Kihon Ippon, che permette al praticante di reagire in base alla situazione. Durante questo esercizio, l'avversario può attaccare liberamente, ma il karateka deve rispondere con tecniche di difesa, contrattacco e blocchi specifici. L'obiettivo è imparare a combattere con libertà, ma mantenendo il controllo delle proprie tecniche. Jiyu Ippon sviluppa la capacità di adattarsi rapidamente ai cambiamenti nel combattimento e di rispondere in modo efficace.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Libero</h3>   
             <p class="p2">
                 Il Kumite libero, o combattimento libero, è la fase del Karate in cui il praticante ha la libertà di applicare tutte le tecniche apprese nei kata e nel Kihon in un combattimento senza restrizioni. Qui, il karateka deve essere in grado di reagire a qualsiasi attacco dell'avversario, utilizzando le giuste tecniche di attacco, difesa e contrattacco. Il Kumite libero richiede una grande comprensione delle distanze, del timing e della strategia, e aiuta il praticante a sviluppare la creatività nel combattimento.
@@ -118,7 +118,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

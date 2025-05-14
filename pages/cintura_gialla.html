@@ -40,7 +40,7 @@
 
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Nidan</h3>
             <img src="../images/Taikyoku_Nidan.jpg" alt="kata" class="img_res">
             <p>
@@ -49,7 +49,7 @@
                 È utile per sviluppare la capacità di mantenere la concentrazione e la forza durante l'intera esecuzione.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Sandan</h3>
             <img src="../images/Taikyoku_Sandan.jpg" alt="kata" class="img_res">
             <p>
@@ -58,7 +58,7 @@
                 Ideale per affinare l’equilibrio e l’allineamento del corpo.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Shodan</h3>
             <img src="../images/HEIAN_SHODAN.webp" alt="kata" class="img_res">
             <p>
@@ -71,7 +71,7 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">
                 In questo stadio, il Kihon Ippon Kumite viene praticato con maggiore velocità e realismo. 
@@ -79,7 +79,7 @@
                 Si lavora sull’efficacia delle parate, sulla stabilità in posizione e sul controllo della respirazione durante il contrattacco.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">
                 Con la cintura gialla, il Sanbon Kumite inizia a essere praticato con maggiore fluidità. 
@@ -87,7 +87,7 @@
                 L’allievo impara a mantenere una guardia attenta e a rispondere con precisione, sviluppando il tempismo.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Gohon</h3>   
             <p class="p2">
                 Nel Gohon Kumite si lavora sulla ripetizione per rafforzare la memoria muscolare e l’automatismo. 
@@ -133,7 +133,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

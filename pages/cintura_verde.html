@@ -36,19 +36,19 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Nidan</h3>
             <img src="../images/Heian_Nidan.jpg" alt="kata" class="img_res">
             <p>Heian Nidan è il secondo kata della serie Heian e si concentra sulla difesa contro attacchi frontali, con un'enfasi sul miglioramento delle parate e dei contrattacchi. Questo kata introduce movimenti più complessi e avanzati, come il blocco del basso, la parata ad angolo e il colpo in avanti con la mano aperta. In questa fase, l'obiettivo principale è sviluppare fluidità nei cambi di direzione e perfezionare la precisione dei colpi. È un kata che pone le basi per i kata più avanzati, come Heian Sandan e Heian Yondan, dove la tecnica viene ulteriormente raffinata.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Sandan</h3>
             <img src="../images/Heian_Sandan.webp" alt="kata" class="img_res">
             <p>Heian Sandan rappresenta un passo avanti nella difficoltà rispetto ai kata precedenti. Questo kata si concentra sulla combinazione di parate e contrattacchi, con un'enfasi sul controllo della distanza e sullo sviluppo di attacchi rapidi e precisi. I movimenti più complessi, come le rotazioni e i cambi di angolazione, sono essenziali per completare il kata con fluidità. Durante l'esecuzione, l'attenzione è rivolta a mantenere l'equilibrio e a migliorare la forza dei colpi, mentre si lavora sul timing e sulla sincronizzazione dei movimenti.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Yondan</h3>
             <img src="../images/HeianYondan.jpg" alt="kata" class="img_res">
             <p>Heian Yondan è il quarto kata della serie Heian e rappresenta un passo importante nel percorso di crescita di un praticante. Questo kata include movimenti più complessi, come i blocchi laterali e le parate ad angolo acuto. Il kata enfatizza il miglioramento della forza fisica e mentale, con l'obiettivo di ottenere movimenti più precisi e potenti. Durante l'esecuzione, il praticante impara a combinare la velocità con il controllo, affinando le tecniche per raggiungere un perfetto equilibrio tra attacco e difesa.</p>
@@ -58,15 +58,15 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p>Kihon Ippon è una forma di kumite che si concentra sull'esecuzione di tecniche base in uno scenario controllato. Ogni partecipante esegue un attacco ben preciso, mentre l'altro praticante risponde con una parata e un contrattacco. Questo tipo di kumite è fondamentale per sviluppare la reattività e la precisione, imparando a reagire agli attacchi in modo veloce e accurato. La pratica di Kihon Ippon aiuta a costruire una solida base di tecnica e consapevolezza nelle situazioni di combattimento.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p>Il Sanbon Kumite è una forma di kumite in cui il combattente si confronta con tre attacchi consecutivi, ognuno dei quali richiede una risposta difensiva e offensiva. Ogni movimento deve essere eseguito con estrema precisione, dalla parata all'attacco, con un'attenzione particolare alla distanza e alla velocità. Questo tipo di kumite è essenziale per imparare a gestire il tempo e lo spazio durante un combattimento, sviluppando così una buona strategia di difesa e attacco. Il Sanbon aiuta anche a migliorare la concentrazione, dato che ogni movimento deve essere eseguito in modo perfetto.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Jiyu Ippon</h3>   
             <p>Jiyu Ippon è una forma di kumite in cui uno dei praticanti esegue un attacco libero, mentre l'altro reagisce con una difesa e un contrattacco. Questo tipo di kumite consente una maggiore libertà di movimento rispetto alle forme più rigide come il Kihon Ippon e il Sanbon, permettendo ai praticanti di esprimere la propria creatività e di sviluppare un senso di improvvisazione. La pratica di Jiyu Ippon è fondamentale per imparare a gestire la pressione del combattimento e migliorare la propria capacità di adattamento.</p>
         </div>
@@ -105,7 +105,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

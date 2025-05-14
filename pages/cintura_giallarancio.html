@@ -39,7 +39,7 @@
 
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Sandan</h3>
             <img src="../images/Taikyoku_Sandan.jpg" alt="kata" class="img_res">
             <p>
@@ -49,7 +49,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Shodan</h3>
             <img src="../images/HEIAN_SHODAN.webp" alt="kata" class="img_res">
             <p>
@@ -59,7 +59,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Nidan</h3>
             <img src="../images/Heian_Nidan.jpg" alt="kata" class="img_res">
             <p>
@@ -72,7 +72,7 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">
                 Il Kihon Ippon Kumite è una forma di combattimento preordinato dove uno dei praticanti attacca e l’altro difende con 
@@ -80,7 +80,7 @@
                 come trasformare le tecniche di base in applicazioni reali attraverso parate e contrattacchi precisi.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">
                 Sanbon Kumite significa “combattimento a tre passi” e viene utilizzato per sviluppare controllo, equilibrio 
@@ -88,7 +88,7 @@
                 seguite da un contrattacco. Questa forma aiuta a stabilire una solida base nella distanza e nella sincronizzazione.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Gohon</h3>   
             <p class="p2">
                 Gohon Kumite è una sequenza di cinque attacchi e difese che si svolge in linea retta. Serve a consolidare le parate 
@@ -132,7 +132,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

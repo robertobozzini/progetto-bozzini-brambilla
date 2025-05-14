@@ -35,19 +35,19 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Yondan</h3>
             <img src="../images/HeianYondan.jpg" alt="kata" class="img_res">
             <p>Il Heian Yondan è il quarto kata del gruppo Heian, pensato per i principianti avanzati. Esso aiuta a sviluppare una buona coordinazione, velocità e concentrazione. Il kata si concentra principalmente sulla difesa contro gli attacchi al corpo, come parate laterali, ed è fondamentale per sviluppare una solida base per kata più complessi. In questo kata, il praticante impara anche la gestione del respiro e l’importanza della posizione stazionaria combinata con l’esecuzione rapida dei movimenti.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Godan</h3>
             <img src="../images/heian godan.gif" alt="kata" class="img_res">
             <p>Il Heian Godan è il quinto kata del sistema Heian, e si distingue per la sua enfasi su movimenti rapidi e potenti. In questo kata, i praticanti apprendono come integrare le parate, gli attacchi e le transizioni tra le posizioni. Il movimento fondamentale del Heian Godan è il gyaku-zuki (pugno inverso), che viene eseguito in combinazione con altre tecniche avanzate come il mawashi-geri (calcio rotante). Questo kata è perfetto per affinare la velocità e la potenza nei colpi.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Tekki Shodan</h3>
             <img src="../images/download.jpg" alt="kata" class="img_res">
             <p>Il Tekki Shodan è un kata molto importante per il praticante di Karate. Esso si concentra sulla stabilità, il controllo e la potenza nelle posizioni basse (kokutsu-dachi). In questo kata, il praticante si esercita a mantenere una forte e radicata posizione mentre esegue tecniche come il gedan-barai (parata verso il basso) e il mae-geri (calcio frontale). Il Tekki Shodan è fondamentale per sviluppare una solida base di movimento e forza fisica, ed è essenziale per i progressi verso la cintura marrone.</p>
@@ -57,15 +57,15 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">Il Kihon Ippon Kumite è un tipo di combattimento basato su una serie di attacchi e difese predefiniti, utilizzato per perfezionare la tecnica e l’accuratezza nei colpi. In questo esercizio, il praticante esegue un attacco seguito da una parata, mentre l'avversario risponde con un attacco predeterminato. L’obiettivo principale del Kihon Ippon è quello di migliorare la precisione dei movimenti, la reattività e il tempismo, elementi fondamentali nel Karate. È una pratica che aiuta i karateka a perfezionare la tecnica e la consapevolezza della distanza durante il combattimento.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">Il Sanbon Kumite è una forma di combattimento predefinito che prevede tre attacchi e tre difese. È un tipo di kumite che sviluppa la comprensione della distanza e della velocità, e insegna ai praticanti a rispondere con prontezza agli attacchi avversari. Le tecniche principali includono il gyaku-zuki (pugno inverso) e il mae-geri (calcio frontale), ma l’accento è posto anche sulla gestione dello spazio e sul controllo dei colpi. L’apprendimento del Sanbon Kumite è un passo importante verso il combattimento libero.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Jiyu Ippon</h3>   
             <p class="p2">Il Jiyu Ippon Kumite è una forma di combattimento semi-libero dove un singolo attacco viene eseguito da un praticante, con l’avversario che risponde in maniera controllata. Questo tipo di kumite aiuta a migliorare la capacità di risposta in una situazione di combattimento reale, mantenendo al contempo il controllo e la disciplina. L’obiettivo è quello di sviluppare la capacità di eseguire attacchi rapidi e precisi, mentre si mantiene una buona difesa contro gli attacchi avversari. Il Jiyu Ippon è ideale per avvicinarsi al combattimento libero.</p>
         </div>
@@ -104,7 +104,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>
