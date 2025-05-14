@@ -36,37 +36,37 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Bassai Dai</h3>
             <img src="../images/Bassai Dai.jpg" alt="kata" class="img_res">
             <p>Bassai Dai è uno dei kata più importanti del Karate. Questo kata è un’espressione di forza e determinazione, ed è studiato per insegnare come affrontare un avversario potente e per imparare a rompere la difesa dell’avversario. È caratterizzato da potenti movimenti di braccia e gambe, combinati con rapidi cambiamenti di direzione.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kanku Dai</h3>
             <img src="../images/kanku dai.gif" alt="kata" class="img_res">
             <p>Kanku Dai è uno dei kata più venerati nel Karate. Il suo nome significa "osservare il cielo", che simboleggia l'espansione della mente e la comprensione dell'energia universale. Il kata insegna ad essere agili e pronti a reagire a ogni tipo di attacco, con movimenti ampi e potenti.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Tekki Nidan</h3>
             <img src="../images/Tekki_Nidan.jpg" alt="kata" class="img_res">
             <p>Tekki Nidan è un kata che sviluppa la stabilità e la potenza nella posizione di cavallo. I movimenti in questo kata enfatizzano la forza nelle gambe e la capacità di resistenza. È un kata che insegna il controllo del corpo e la coordinazione, con un focus particolare sui colpi frontali e laterali.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Tekki Sandan</h3>
             <img src="../images/Tekki_Sandan.jpg" alt="kata" class="img_res">
             <p>Tekki Sandan è l’ultimo dei kata della serie Tekki e rappresenta il culmine della forza e della resistenza nelle posizioni basse. Questo kata è progettato per affinare la tecnica dei colpi e dei blocchi, migliorando la potenza e la velocità nelle azioni difensive e offensive.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Bassai Sho</h3>
             <img src="../images/Bassai Sho.jpg" alt="kata" class="img_res">
             <p>Bassai Sho è una versione più avanzata del kata Bassai Dai. Mentre entrambi i kata condividono la stessa filosofia, Bassai Sho si concentra maggiormente sull’aspetto tecnico e sulla fluidità dei movimenti. È una combinazione di forza e agilità, utile per affrontare diverse situazioni di combattimento.</p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kanku Sho</h3>
             <img src="../images/Kanku Sho.jpg" alt="kata" class="img_res">
             <p>Kanku Sho è una versione più avanzata del kata Kanku Dai, con movimenti più complessi e articolati. Questo kata richiede una padronanza del bilanciamento, del controllo respiratorio e della precisione nei movimenti, ed è essenziale per sviluppare una comprensione profonda del Karate.</p>
@@ -76,15 +76,15 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p>Il Kihon Ippon è una forma di combattimento dove il praticante esegue un attacco specifico da parte dell'avversario, a cui risponde con una difesa e un contrattacco. È una delle prime tecniche di Kumite insegnate agli studenti, utile per sviluppare il controllo e la tecnica nei combattimenti uno contro uno.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Jiyu Ippon</h3>   
             <p>Il Jiyu Ippon Kumite è una forma di combattimento più libera rispetto al Kihon Ippon, dove entrambe le parti sono libere di eseguire attacchi e difese, ma sempre con un focus sul controllo e il rispetto della distanza. Questo tipo di Kumite aiuta a migliorare la reattività e la capacità di adattamento durante il combattimento.</p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Libero</h3>   
             <p>Il Kumite Libero è una forma di combattimento in cui non ci sono regole rigide sugli attacchi o sulle difese. Gli atleti si confrontano in modo più naturale, ma comunque rispettando i principi fondamentali del Karate. Questo tipo di combattimento permette di mettere in pratica tutte le tecniche apprese durante l'allenamento in situazioni di alta pressione.</p>
         </div>
@@ -123,7 +123,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

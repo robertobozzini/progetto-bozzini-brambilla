@@ -378,7 +378,7 @@ header {
     max-width: 100%;
 }
 
-#Kumite .content {
+#Kumite .container__content {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     font-size: 230%;
@@ -389,29 +389,29 @@ header {
     z-index: 1;
 }
 
-#Kumite .content h1 {
+#Kumite .container__content h1 {
     color: white;
 }
 
-#Kumite .content ul {
+#Kumite .container__content ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     margin-right: 5%;
 }
 
-#Kumite .content ul:hover {
+#Kumite .container__content ul:hover {
     padding-top: 5%;
     transition: padding 0.5s ease-out;
 }
 
-#Kumite .content ul li a {
+#Kumite .container__content ul li a {
     color: rgb(208, 254, 156);
     font-size: 30px;
     text-decoration: underline;
 }
 
-#Kumite .content ul li a:hover {
+#Kumite .container__content ul li a:hover {
     color:  rgb(168, 244, 62);
     font-size: 70;
 }
@@ -425,7 +425,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.col-33 {
+.grid__col {
     opacity: 0;
     padding: 0;
     transform: translateY(30px);
@@ -441,16 +441,16 @@ header {
     width: 80%;
 }
 
-.col-33.reveal {
+.grid__col.reveal {
     opacity: 1;
     transform: translateY(0);
 }
 
-.col-33 p {
+.grid__col p {
     text-align: justify;
 }
 
-.col-33 img{
+.grid__col img{
     transform: translateX(5%);
 }
 
@@ -488,7 +488,7 @@ header {
     align-items: baseline
 }
 
-.carousel-cell {
+.carousel__cell {
     height: 30vh;
     width: 33.33%;
     color: black;
@@ -502,21 +502,26 @@ header {
   height: 70vh;
 }
 
-.carousel-cell a {
+.h-45{
+  height: 45vh;
+  min-height: 500px;
+}
+
+.carousel__cell a {
     height: fit-content;
 }
-.carousel-cell h3 {
+.carousel__cell h3 {
     height: fit-content;
 }
 
-.carousel-cell a .img_res{
+.carousel__cell a .img_res{
     height: fit-content;
     object-fit: cover;
     max-height: 500px;
     justify-self: center;
 }
 
-.carousel-cell a img:hover{
+.carousel__cell a img:hover{
     animation: image 2s infinite linear;
 }
 
@@ -542,7 +547,7 @@ footer p {
    MEDIA QUERIES
 =========================== */
 @media (max-width: 768px) {
-    .carousel-cell {
+    .carousel__cell {
         width: 100%;
     }
 
@@ -579,13 +584,21 @@ footer p {
         gap: 30px;    
         justify-content: center;
         flex-wrap: wrap;
+    }
 
 }
 
+@media (max-width: 500px) {
+  #Kumite .container__content ul li a {
+    color: rgb(208, 254, 156);
+    font-size: 18px;
+    text-decoration: underline;
+}
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .carousel-cell {
+    .carousel__cell {
         width: 50%;
     }
     .sidebar li a {
@@ -600,7 +613,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    .col-33 {
+    .grid__col {
         width: 100%;
     }
 
@@ -608,6 +621,24 @@ footer p {
       grid-template-columns: 1fr;
     }
     
+}
+
+@media (max-height: 800px) {
+  .footer{
+    display: none;
+  }
+  .main-carousel{
+    padding-bottom: 100px;
+  }
+
+  body{
+    padding-bottom: 500px;
+  }
+
+  .carousel__cell {
+      min-height: 350px;
+    }
+  
 }
 
 

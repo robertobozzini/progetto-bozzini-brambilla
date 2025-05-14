@@ -39,7 +39,7 @@
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Shodan</h3>
             <img src="../images/HEIAN_SHODAN.webp" alt="kata" class="img_res">
             <p>
@@ -47,7 +47,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Nidan</h3>
             <img src="../images/Heian_Nidan.jpg" alt="kata" class="img_res">
             <p>
@@ -55,7 +55,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Sandan</h3>
             <img src="../images/Heian_Sandan.webp" alt="kata" class="img_res">
             <p>
@@ -67,19 +67,19 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">
                 **Kihon Ippon Kumite** è un esercizio di difesa e contrattacco dove il praticante deve reagire a un attacco dell’avversario con una tecnica di parata e successivamente con un attacco preciso. Il kihon ippone aiuta a migliorare la tempistica e il controllo della distanza, dando una solida base per il kumite libero. L’esercizio favorisce lo sviluppo di riflessi rapidi e consapevolezza dei propri movimenti.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">
                 **Sanbon Kumite** è una forma di kumite strutturata dove il difensore si trova a reagire a tre attacchi consecutivi con le tecniche di parata e risposta previste. Questo esercizio aiuta a migliorare la velocità di reazione e la capacità di anticipare i movimenti dell’avversario. È anche utile per affinare la gestione dell’energia e delle risorse fisiche durante il combattimento.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Gohon</h3>   
             <p class="p2">
                 Il **Gohon Kumite** prevede cinque attacchi consecutivi, per ogni cui il difensore reagisce con una serie di parate e contrattacchi. Questo esercizio favorisce la preparazione mentale e fisica per il combattimento libero, migliorando la capacità di mantenere il controllo e la calma durante una serie di attacchi multipli. È un passaggio cruciale per la comprensione del ritmo nel kumite.
@@ -119,7 +119,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>

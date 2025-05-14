@@ -38,7 +38,7 @@
 
     <h2 class="cnt">KATA</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Taikyoku Sandan</h3>
             <img src="../images/Taikyoku_Sandan.jpg" alt="kata" class="img_res">
             <p>
@@ -46,7 +46,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Shodan</h3>
             <img src="../images/HEIAN_SHODAN.webp" alt="kata" class="img_res">
             <p>
@@ -54,7 +54,7 @@
             </p>
         </div>
 
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Heian Nidan</h3>
             <img src="../images/Heian_Nidan.jpg" alt="kata" class="img_res">
             <p>
@@ -65,19 +65,19 @@
 
     <h2 class="cnt">KUMITE</h2>
     <div class="grid clearfix m2">
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Kihon Ippon</h3>   
             <p class="p2">
                 Il Kihon Ippon Kumite consiste in attacchi e difese prestabiliti, con l’obiettivo di sviluppare la precisione tecnica e la corretta distanza tra i praticanti. L’allievo apprende a reagire con decisione, rispettando il tempo dell’attacco e l’intenzione del partner. L’accento è posto sul controllo, la postura e la consapevolezza del proprio corpo nel confronto simulato.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Sanbon</h3>   
             <p class="p2">
                 Sanbon Kumite prevede una sequenza di tre attacchi consecutivi, ai quali il difensore risponde con parate e contrattacchi. Questo tipo di esercizio migliora il ritmo, la resistenza e la gestione dell’energia nel tempo. L’obiettivo è eseguire le tecniche mantenendo concentrazione, continuità e controllo durante tutta la serie.
             </p>
         </div>
-        <div class="col-33 cnt p2">
+        <div class="grid__col cnt p2">
             <h3 class="cnt">Gohon</h3>   
             <p class="p2">
                 Gohon Kumite è una forma di combattimento didattico basato su cinque attacchi e cinque difese. Viene utilizzato nei primi gradi per fissare le tecniche di base attraverso la ripetizione. Il praticante allena la distanza, la reattività e il corretto posizionamento delle tecniche, costruendo automatismi solidi e coordinati.
@@ -119,7 +119,7 @@
         threshold: 0.1
     });
 
-    document.querySelectorAll('.col-33').forEach(col => {
+    document.querySelectorAll('.grid__col').forEach(col => {
         observer.observe(col);
     });
 </script>
