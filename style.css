@@ -610,6 +610,16 @@ footer p {
     
 }
 
+@media (max-height: 800px) {
+  .footer{
+    display: none;
+  }
+  .main-carousel{
+    padding-bottom: 100px;
+  }
+  
+}
+
 
 /* ===========================
    ANIMAZIONI
